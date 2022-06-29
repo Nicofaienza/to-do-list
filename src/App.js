@@ -10,7 +10,7 @@ function App({tasks}) {
 
   const [task, setTask] = useState([]);
   const [newTask, setNewTask] = useState("");
-  const [tasksCompleted, setTaskComleted] = useState(0);
+  const [tasksCompleted, setTaskCompleted] = useState(0);
   const [taskTotal, setTaskTotal] = useState(0);
 
 
@@ -64,7 +64,7 @@ function App({tasks}) {
       }return count;
     })
     setTaskTotal(count)
-  })
+  }, [task])
 
   useEffect(() => {
     let count = 0;
@@ -73,8 +73,8 @@ function App({tasks}) {
         count ++;
       }return count;
     })
-    setTaskComleted(count)
-  })
+    setTaskCompleted(count)
+  }, [task])
 
   useEffect(() => {
     localStorage.setItem('task', JSON.stringify(task));
@@ -83,7 +83,7 @@ function App({tasks}) {
   return (
     <>
       <form id = "form" onSubmit={handleSubmit}>
-        <input id="input" placeholder="Add task" onChange={handleChange} value = {newTask} autoFocus ></input>
+        <input id="input" placeholder="Agregar tarea" onChange={handleChange} value = {newTask} autoFocus ></input>
         <button className="btn" type="submit">ADD</button>
       </form>
 
@@ -93,7 +93,7 @@ function App({tasks}) {
       </div>
 
       <div id="tasks-container">
-        <h2 id="title">Tasks to do: </h2>
+        <h2 id="title">Tareas por hacer: </h2>
         <ul id="tasks-list">
           <Tasks tasks = {task} setTask = {setTask} handleDeleteTask = {handleDeleteTask} handleCheck = {handleCheck} />
         </ul>

@@ -157,6 +157,7 @@ body{
 
 .btn-edit{
   justify-self: end;
+  cursor: pointer;
 }
 
 .tasks-total-completed{

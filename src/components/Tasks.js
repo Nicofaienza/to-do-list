@@ -6,7 +6,7 @@ const Tasks = ({tasks, handleDeleteTask, handleCheck, setTask}) => {
 
 
     if(tasks.length === 0){
-        return "No homework yet"
+        return "No hay tareas"
     }
     return tasks
             .filter(task => task.task)
