@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Nicofaienza/to-do-list.git/static/css/main.c9c98ba1.css",
-    "main.js": "/Nicofaienza/to-do-list.git/static/js/main.77dbf330.js",
-    "index.html": "/Nicofaienza/to-do-list.git/index.html",
-    "main.c9c98ba1.css.map": "/Nicofaienza/to-do-list.git/static/css/main.c9c98ba1.css.map",
-    "main.77dbf330.js.map": "/Nicofaienza/to-do-list.git/static/js/main.77dbf330.js.map"
+    "main.css": "/Nicofaienza/to-do-list/static/css/main.c9c98ba1.css",
+    "main.js": "/Nicofaienza/to-do-list/static/js/main.77dbf330.js",
+    "index.html": "/Nicofaienza/to-do-list/index.html",
+    "main.c9c98ba1.css.map": "/Nicofaienza/to-do-list/static/css/main.c9c98ba1.css.map",
+    "main.77dbf330.js.map": "/Nicofaienza/to-do-list/static/js/main.77dbf330.js.map"
   },
   "entrypoints": [
     "static/css/main.c9c98ba1.css",
